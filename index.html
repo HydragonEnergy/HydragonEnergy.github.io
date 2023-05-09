@@ -1,85 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hydragon Energy LLC</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <img src="hydragon-logo.png" alt="Hydragon Energy LLC" />
-        <nav>
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#solutions">Solutions</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hydragon Energy</title>
+    <style>
+        body {
+            background-color: #F8F9FA;
+            color: #333333;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #F8F9FA;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+        }
+        .header img {
+            height: 50px;
+        }
+        .nav {
+            background-color: #0D294F;
+            color: #F8F9FA;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+        }
+        .nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .nav li {
+            margin: 0 10px;
+        }
+        .nav li a {
+            color: #F8F9FA;
+            text-decoration: none;
+        }
+        .banner {
+            background-image: url("https://via.placeholder.com/1500x500");
+            background-size: cover;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .banner h1 {
+            color: #F8F9FA;
+            font-size: 3rem;
+            margin: 0;
+        }
+        .banner p {
+            color: #F8F9FA;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="https://via.placeholder.com/100x50" alt="Hydragon Energy logo">
+        <nav class="nav">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
-      </div>
     </header>
-
-    <main>
-      <section id="about">
-        <div class="container">
-          <h1>Revolutionizing Micro Wind Generation for Electric Cars</h1>
-          <p>
-            Hydragon Energy LLC is a small business dedicated to developing and commercializing micro wind generation systems for electric cars. Our technology is designed to be compact, efficient, and cost-effective, providing a sustainable and renewable source of energy for the growing electric vehicle market.
-          </p>
-        </div>
-      </section>
-
-      <section id="solutions">
-        <div class="container">
-          <h2>Our Solutions</h2>
-          <h3>Compact and Efficient Micro Wind Generation Systems</h3>
-          <p>
-            Our micro wind generation systems are designed to be installed on the roof of electric cars, providing a clean and renewable source of energy to supplement the car's battery. Our technology is compact, lightweight, and produces minimal drag, making it an ideal solution for electric cars of all shapes and sizes.
-          </p>
-          <h3>Research and Development Funding</h3>
-          <p>
-            Hydragon Energy LLC has received funding from the National Science Foundation to support research and development of our micro wind generation systems. We are committed to leveraging this funding to create innovative and impactful solutions for the electric vehicle market.
-          </p>
-        </div>
-      </section>
-
-      <section id="team">
-        <div class="container">
-          <h2>Our Team</h2>
-          <ul>
-            <li>John Smith, CEO</li>
-            <li>Jane Doe, CTO</li>
-            <li>Michael Johnson, Lead Engineer</li>
-          </ul>
-        </div>
-      </section>
-
-      <section id="contact">
-        <div class="container">
-          <h2>Contact Us</h2>
-          <form>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required />
-
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required />
-
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">Submit</button>
-          </form>
-        </div>
-      </section>
-    </main>
-
-    <footer>
+    <section class="banner">
+        <h1>Hydragon Energy</h1>
+        <p>Revolutionizing micro wind generation for electric vehicles</p>
+    </section>
+    <!-- Hero section -->
+    <section id="hero" class="hero">
       <div class="container">
-        <p>&copy; 2023 Hydragon Energy LLC. All rights reserved.</p>
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <h1>Hydragon Energy</h1>
+            <p class="hero-tagline">Revolutionizing Micro Wind Generation for Electric Vehicles</p>
+            <a href="#contact-us" class="btn btn-primary">Contact Us</a>
+          </div>
+          <div class="hero-image">
+            <img src="images/logo.png" alt="Hydragon Energy Logo" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About section -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <h2>About Us</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <p>Hydragon Energy is a startup based in the United States that is focused on revolutionizing micro wind generation systems for electric vehicles. We are committed to developing innovative and sustainable solutions that can help reduce the carbon footprint of vehicles on the road today.</p>
+            <p>Our team is composed of experienced engineers and scientists who are passionate about creating new technology that can change the world. We have already built a working prototype of our micro wind generation system, and we are excited to bring it to market with the help of our partners and investors.</p>
+          </div>
+          <div class="col-md-6">
+            <div class="video-wrapper">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/YE7VzlLtp-4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container-fluid bg-grey">
+        <h2 class="text-center">CONTACT</h2>
+        <div class="row">
+            <div class="col-sm-5">
+                <p>Contact us and we'll get back to you within 24 hours.</p>
+                <p><span class="glyphicon glyphicon-map-marker"></span> Hydragon Energy, Inc.</p>
+                <p><span class="glyphicon glyphicon-map-marker"></span> 123 Main St., Suite 200, Anytown USA 12345</p>
+                <p><span class="glyphicon glyphicon-phone"></span> +1 555-555-1212</p>
+                <p><span class="glyphicon glyphicon-envelope"></span> info@hydragonenergy.com</p>
+            </div>
+            <div class="col-sm-7 slideanim">
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                    </div>
+                </div>
+                <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5" required></textarea><br>
+                <div class="row">
+                    <div class="col-sm-12 form-group">
+                        <button class="btn btn-default pull-right" type="submit">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="container-fluid text-center">
+        <a href="#myPage" title="To Top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
+        <p>Hydragon Energy &copy; 2023</p>
+    </footer>
+
+    <!-- Script for smooth scrolling -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links in navbar + footer link
+            $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 900, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+
+            $(window).scroll(function () {
+                $(".slideanim").each(function () {
+                    var pos = $(this).offset().top;
+
+                    var winTop = $(window).scrollTop();
+                    if (pos < winTop + 600) {
+                        $(this).addClass("slide");
+                    }
+                });
+            });
+        })
+    </script>
+
+</body>
+
+</html>
+    <!-- Contact section -->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading">Let's Get In Touch!</h2>
+            <hr class="my-4">
+            <p class="mb-5">Ready to take the next step? Contact us today to learn more about how our technology can benefit your organization.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 ml-auto text-center">
+            <i class="fas fa-phone fa-3x mb-3 sr-contact"></i>
+            <p><a href="tel:+15555555555">+1 (555) 555-5555</a></p>
+          </div>
+          <div class="col-lg-4 mr-auto text-center">
+            <i class="fas fa-envelope fa-3x mb-3 sr-contact"></i>
+            <p>
+              <a href="mailto:contact@hydragonenergy.com">contact@hydragonenergy.com</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light py-5">
+      <div class="container">
+        <div class="small text-center text-muted">© 2023 Hydragon Energy. All Rights Reserved.</div>
       </div>
     </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/creative.min.js"></script>
+
   </body>
+
 </html>
-   
